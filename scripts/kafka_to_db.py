@@ -5,10 +5,10 @@ This script polls the message from a kafka topic and dump it to an existing tabl
 """
 import sys, psycopg2
 
-import common
-from mylogger import logger
-from mykafka import MyKafkaConsumer
-from mypostgredb import MyPostgreDB
+from myaiven import common
+from myaiven.mylogger import logger
+from myaiven.mykafka import MyKafkaConsumer
+from myaiven.mypostgredb import MyPostgreDB
 
 
 def main():

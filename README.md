@@ -35,7 +35,28 @@ Run the `init.py` script (`python init.py`) which will guide you through setting
 3. Leave the above script running for a while, in the background or open a new command console, and execute `kafka_to_db.py`: `python kafka_to_db.py`.
 4. Check the results in the database to see if the table has been populate with latest 
 
-
+### sample_settings.json
+With the `init.py` script, you can create a dedicated `settings.json` file to be used with your kafka and postgredb configurations. Below is an explanation of the parameters used in the file in case you are going to manually configure the service details and run the two main scripts.
+|Key|Description|Sample Value|
+|-|-|-|
+|**Kafka Settings**|
+|KAFKA_SERVER|kafka server hostname|localhost|
+|KAFKA_PORT |kafka server port |9092|
+|KAFKA_PROTOCOL | kafka connection protocol, `SSL` recommended |SSL|
+|KAFKA_CA_FILE|file path for CA file|ca.pem or ~/ca.pem|
+|KAFKA_CERT_FILE|file path Certificate|service.cert or ~/service.cert|
+|KAFKA_KEY_FILE|file path for Key file|service.key or ~/service.key|
+|KAFKA_TOPIC|kafka topic name| my_topic|
+|KAFKA_CLIENT_ID | kafka consumer client id | my_client|
+|KAFKA_GROUP_ID| kafka consumer group id | my_group |
+|**PostgreSQL DB Settings**|
+| DB_HOST| DB server name| localhost |
+| DB_PORT| DB server port| 5432 |
+| DB_USER | username| myuser |
+| DB_PASSWORD |password| mypassword |
+| DB_HASH_PASSWORD |encrypted password|  |
+| DB_NAME |Database Name| mydb |
+| DB_TABLE |Table name| mytable |
 
 ## Attributions
 - https://github.com/VishnuUnnikrishnan/aiven_assignment -- a similar repo on Aiven assignment which I referenced a lot

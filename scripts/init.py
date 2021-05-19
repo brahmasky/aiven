@@ -5,8 +5,8 @@ and running the two script sequentially assuming no other user intervention is r
 """
 
 import time, sys, subprocess, json, bcrypt
-import common
-from mylogger import logger
+from myaiven import common
+from myaiven.mylogger import logger
 
 # create settings json with user input, with some level of verification
 # could do more with integration with other systems such as database/vault management

@@ -1,0 +1,21 @@
+{
+  "kafka": {
+    "KAFKA_SERVER": "localhost",
+    "KAFKA_PORT": "9092",
+    "KAFKA_PROTOCOL": "SSL",
+    "KAFKA_CA_FILE": "ca.pem",
+    "KAFKA_CERT_FILE": "service.cert",
+    "KAFKA_KEY_FILE": "service.key",
+    "KAFKA_TOPIC": "my_topic",
+    "KAFKA_CLIENT_ID": "my_client",
+    "KAFKA_GROUP_ID": "my_group"
+  },
+  "db": {
+    "DB_HOST": "localhost",
+    "DB_PORT": "5432",
+    "DB_USER": "myuser",
+    "DB_PASSWORD": "mypassword",
+    "DB_NAME": "mydb",
+    "DB_TABLE": "mytable"
+  }
+}

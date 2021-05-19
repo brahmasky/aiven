@@ -6,9 +6,9 @@ This script periodically scans a webpage and sends the result to a kafka topic.
 import re, json, time, requests
 from datetime import datetime
 
-import common
-from mylogger import logger
-from mykafka import MyKafkaProducer
+from myaiven import common
+from myaiven.mylogger import logger
+from myaiven.mykafka import MyKafkaProducer
 
 
 # check githut events site with keyword check
