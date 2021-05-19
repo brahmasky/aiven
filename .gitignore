@@ -1,0 +1,13 @@
+__pycache__
+.vscode/
+.zsh*
+.bash*
+logs/
+ca.pem
+service.cert
+service.key
+settings.json
+kafka_test.py
+*testing*
+kafka_settings.json
+db_settings.json
