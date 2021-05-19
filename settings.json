@@ -1,0 +1,22 @@
+{
+  "kafka": {
+    "KAFKA_SERVER": "kafka-homework-epicon-55ed.aivencloud.com",
+    "KAFKA_PORT": "22118",
+    "KAFKA_PROTOCOL": "SSL",
+    "KAFKA_CA_FILE": "ca.pem",
+    "KAFKA_CERT_FILE": "service.cert",
+    "KAFKA_KEY_FILE": "service.key",
+    "KAFKA_TOPIC": "github_event",
+    "KAFKA_CLIENT_ID": "github_client",
+    "KAFKA_GROUP_ID": "github_group"
+  },
+  "db": {
+    "DB_HOST": "pg-43e0eb5-epicon-55ed.aivencloud.com",
+    "DB_PORT": "22116",
+    "DB_USER": "mypostgreuser",
+    "DB_PASSWORD": "e7so8dym9y90yzr5",
+    "DB_HASH_PASSWORD": "$2b$14$KlJDUzDRGKO.RJzQZDM6Ue/MDMVpB/JRnoo.LR5cG4pnxuiTLFHSW",
+    "DB_NAME": "github_event",
+    "DB_TABLE": "http_metrics"
+  }
+}
